@@ -9,11 +9,10 @@ class Solution {
         {
             String x = tokens[i];
             st.push(x);
-            
-            String a,b;
-            
+
             if(st.peek().equals("+"))
             {
+                String a,b;
                 st.pop();
                 a = st.pop();
                 b = st.pop();
@@ -23,6 +22,7 @@ class Solution {
             
             if(st.peek().equals("-"))
             {
+                String a,b;
                 st.pop();
                 a = st.pop();
                 b = st.pop();
@@ -32,6 +32,7 @@ class Solution {
             
             if(st.peek().equals("*"))
             {
+                String a,b;
                 st.pop();
                 a = st.pop();
                 b = st.pop();
@@ -41,6 +42,7 @@ class Solution {
             
             if(st.peek().equals("/"))
             {
+                String a,b;
                 st.pop();
                 a = st.pop();
                 b = st.pop();
