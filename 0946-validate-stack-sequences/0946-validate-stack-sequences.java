@@ -7,7 +7,18 @@ class Solution {
         int i = 0;
         int j = 0;
         
-        for(i=0; i<n; i++)
+//         for(i=0; i<n; i++)
+//         {
+//             st.push(pushed[i]);
+            
+//             while(!st.isEmpty() && st.peek() == popped[j])
+//             {
+//                 st.pop();
+//                 j++;
+//             }
+//         }
+        
+        while(i<n)
         {
             st.push(pushed[i]);
             
@@ -16,6 +27,7 @@ class Solution {
                 st.pop();
                 j++;
             }
+            i++;
         }
         
         return st.isEmpty();
